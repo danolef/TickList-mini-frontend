@@ -28,13 +28,13 @@ function TickListItems ({item, handleDelete, updateBeta}) {
 }
 
     return (
-       <div>
-            <p>Name: {item.climb.name}</p>
-            {details ? <div> <p>Grade: {item.climb.grade}</p> 
-            <p>Type of climb: {item.climb.climb_type}</p>
-            <p>Location: {item.climb.location}</p>
-            <p>Mountain Project Link: {item.climb.mt_project_link}</p> 
-            <p>My Beta: {item.beta}</p>
+       <div id="tickListItem">
+            <h4><strong>Name</strong>: {item.climb.name}</h4>
+            {details ? <div> <p><strong>Grade</strong>: {item.climb.grade}</p> 
+            <p><strong>Type of climb</strong>: {item.climb.climb_type}</p>
+            <p><strong>Location</strong>: {item.climb.location}</p>
+            <p><strong>Mountain Project Link</strong>: {item.climb.mt_project_link}</p> 
+            <p><strong>My Beta</strong>: {item.beta}</p>
             </div>: null}
             {beta ?               
                 <form onSubmit={(e)=> handleSubmit(e, item)}>

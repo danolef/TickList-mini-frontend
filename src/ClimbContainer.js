@@ -3,6 +3,7 @@ import AddClimb from "./AddClimb"
 import ClimbFilter from "./ClimbFilter"
 import ClimbItems from "./ClimbItems"
 import {useState, useEffect} from "react"
+import NavBar from './NavBar'
 
 function ClimbContainer ({allTickList, setAllTickList}) {
     
@@ -43,8 +44,9 @@ function ClimbContainer ({allTickList, setAllTickList}) {
     const climb = allClimbs.map ((climb) => <ClimbItems climb={climb} key={climb.id} addToTickList= {addToTickList}/>)
     
     return (
-       <div> 
+       <div id= "climbCont"> 
         <h3>Climbs</h3>
+        <NavBar />
         <AddClimb postClimb={postClimb}/>
         <ClimbFilter/>
         {climb}

@@ -12,10 +12,36 @@ body {
     monospace;
 } */
 
-* {
+
+/* * {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
-  /* font-weight: 700; */
+  font-weight: 700;
+}
+
+#homePage{
+background-image: url(epic.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+}
+
+#homeBody{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+ }
+
+h1{
+  font-size: 100px;
+  color: black
+}
+
+.link{
+  color: 204, 85, 0;
 }
 
 #itemContainer {
@@ -32,4 +58,4 @@ body {
 button {
   height: 2em;
   margin-left: 15px;
-}
+} */

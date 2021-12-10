@@ -22,7 +22,7 @@ function ClimbItems ({climb, addToTickList}) {
     return (
       <div id="itemContainer">
        <div class= "item">
-            <h3><strong>Name:</strong> {climb.name}</h3>
+            <h4><strong>Name:</strong> {climb.name}</h4>
             {details ? <button onClick={handleShowDetails}>Hide Details</button> : <button onClick={handleShowDetails}>Show Details</button>}
             <button onClick={handleAddToTickList} value={climb.id}>Add to Tick List</button>
         </div> 

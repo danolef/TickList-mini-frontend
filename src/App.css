@@ -1,38 +1,189 @@
-.App {
+
+
+* {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  /* font-weight: 700; */
+}
+
+#homePage{
+background-image: url(epic.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+}
+
+#homeBody{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  text-align:  center;
+ }
+
+h1{
+  font-size: 100px;
+  color: black;
+  font-weight: 700;
+  text-shadow: -1px 1px 2px #a84701,
+				  1px 1px 2px #a84701,
+				  1px -1px 0 #a84701,
+				  -1px -1px 0 #a84701;
+}
+
+h3{
+  margin: 0;
+  padding-top: 10px;
+  font-size: 75px;
+  color: black;
+  font-weight: 700;
+  text-shadow: -.5px .5px 1px #a84701,
+				  .5px .5px 1px #a84701,
+				  .5px -.5px 0 #a84701,
+				  -.5px -.5px 0 #a84701;
+}
+
+.link{
+  margin-right: 25px;
+  padding-right: 25px;
+  font-size: 40px;
+  color: #a84701;
+  font-weight: 700;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: black;
+  text-decoration: none;
+  text-shadow: -.5px .5px 1px #000,
+              .5px .5px 1px #000,
+              .5px -.5px 0 #000,
+              -.5px -.5px 0 #000;
+}
+
+#sidebar {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.linkLast{
+   font-size: 40px;
+  color: #a84701;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: -.5px .5px 1px #000,
+				  .5px .5px 1px #000,
+				  .5px -.5px 0 #000,
+				  -.5px -.5px 0 #000;
+}
+
+
+button {
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#tickListCont {
+  background-image: url(trees.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 800px;
+  height: auto;
+  width: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  
+}
+
+#climbCont {
+  background-image: url(mountain2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: auto;
+  padding-left: 35px;
+  padding-right: 35px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4{
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+p{
+  font-size: 25px;
+  padding-left: 40px;
+  /* background-color: rgba(173, 172, 172, 0.308);
+  width: 50%; */
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; */
+  
 }
 
-.App-link {
-  color: #61dafb;
+strong{
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form{
+  margin-bottom: 30px;
+}
+
+input {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+select {
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+label {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#tickListItem {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a84701;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+#tickListItem:last-of-type { 
+  margin-bottom: 0px;
+  padding-bottom: 75px;
+}
+
+#itemContainer {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a84701;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+#itemContainer:last-of-type {
+  margin-bottom: 0px;
+  padding-bottom: 75px;
 }

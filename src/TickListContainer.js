@@ -1,6 +1,7 @@
 import TickListFilter from "./TickListFilter"
 import TickListItems from "./TickListItems"
 import {useEffect} from 'react'
+import NavBar from './NavBar'
 
 function TickListContainer ({allTickList, setAllTickList}) {
     
@@ -46,8 +47,9 @@ function TickListContainer ({allTickList, setAllTickList}) {
     const tickList= allTickList.map ((item) => <TickListItems handleDelete= {handleDelete} updateBeta={updateBeta} item={item} key={item.id}/>)
 
     return (
-       <div> 
+       <div id="tickListCont"> 
         <h3>My Projects</h3>
+        <NavBar/>
         <TickListFilter/>
         {tickList}
        </div>
